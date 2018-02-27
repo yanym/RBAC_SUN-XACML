@@ -23,13 +23,13 @@ import org.codehaus.jackson.map.ObjectMapper;
 import com.sun.xacml.ctx.ResponseCtx;
 import com.sun.xacml.ctx.Result;
 
-import be.cetic.rbac.man.json.Request;
-import be.cetic.rbac.man.json.User;
 import be.cetic.rbac.man.pip.SqlitePIP;
-import be.cetic.rbac.man.server.PAP;
-import be.cetic.rbac.man.server.PDP;
-import be.cetic.rbac.man.server.PIP;
-import be.cetic.rbac.man.server.Util;
+import json.Request;
+import json.User;
+import server.PAP;
+import server.PDP;
+import server.PIP;
+import server.Util;
 
 @Path("/pdp")
 public class PDPService {
@@ -60,7 +60,7 @@ public class PDPService {
 			if(user!= null)
 				request.getSubject().setRole(user.getRole());
 			ResponseCtx responseCtx = pdp.evaluateRequest(Util.buildRequest(request.getSubject(), request.getAction(), request.getResource()));
-			be.cetic.rbac.man.json.Response response = new be.cetic.rbac.man.json.Response();
+			json.Response response = new json.Response();
 			response.setPermit(true);
 			if(!responseCtx.getResults().isEmpty()){
 				Result result = (Result)responseCtx.getResults().iterator().next();

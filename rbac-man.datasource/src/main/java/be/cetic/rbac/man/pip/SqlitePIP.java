@@ -3,9 +3,9 @@ package be.cetic.rbac.man.pip;
 import java.sql.SQLException;
 
 import be.cetic.rbac.man.datasource.SqliteManager;
-import be.cetic.rbac.man.datasource.StorageManager;
-import be.cetic.rbac.man.json.User;
-import be.cetic.rbac.man.server.PIP;
+import datasource.StorageManager;
+import json.User;
+import server.PIP;
 
 public class SqlitePIP implements PIP{
 	private StorageManager manager;

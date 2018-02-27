@@ -152,16 +152,16 @@ codemirror {
 
 
 div.navigation-heading{
-	background-color: #70b052;
-	color: white;
+	background-color: white;
+	color: black;
 	font-weight: bold;
-	text-align: right;
+	text-align: left;
 }
 
 
 .dataTable tr th{
-	background-color: #70b052 !important;
-	color: white;
+	background-color: white !important;
+	color: black;
 }
 
 table.dataTable tbody tr.odd {
@@ -169,7 +169,7 @@ table.dataTable tbody tr.odd {
 }
 
 table.dataTable tbody tr.even {
-    background-color: #eee;
+    background-color: lightgray;
 }
 
 
@@ -181,13 +181,13 @@ div.permit{
 
 div.forbidden{
 	color: red;
-	background-color: #fb8daa;
+	background-color: red;
 	border: 2px solid red;
 }
 
 div.indeterminated{
 	color: orange;
-	background-color: #f8ca0a;
+	background-color: yellow;
 	border: 2px solid orange;
 }
 
@@ -229,7 +229,7 @@ div.green.active{
 }
 
 div.request, div.response{
-	background-color: lightgray;
+	background-color: white;
 	padding: 15px;
 	border-radius: 5px;
 	box-shadow: 5px black;
@@ -243,16 +243,16 @@ div.request table, div.response table{
 }
 
 div.subject, div.resource, div.action{
-	background-color: #70b052;
-	padding: 10px;
-	border-radius: 5px;
+	background-color: #E6E6FA;
+	padding: 50px;
+	border-radius: 0px;
 	margin-right: 10px;
 }
 
 input#submit, .btn-primary{
 	padding: 5px;
-	background-color: #70b052;
-	border: 1px outset #70b052;
+	background-color: grey;
+	border: 1px outset white;
 	font-weight: bold;
 	color: white;
 	
@@ -260,8 +260,8 @@ input#submit, .btn-primary{
 
 input#submit:hover, .btn-primary:hover{
 	padding: 5px;
-	background-color: #333333;
-	border: 1px outset #333333;
+	background-color: black;
+	border: 1px outset black;
 	font-weight: bold;
 	color: white;
 	cursor: pointer;
@@ -269,7 +269,7 @@ input#submit:hover, .btn-primary:hover{
 }
 
 div.green{
-	background-color: green;
+	background-color: white;
 }
 
 div.orange{
@@ -284,7 +284,7 @@ body {
 	background: url('../images/bg.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-color: #333333;
+	background-color: white;
 }
 
 .navbar-default{
@@ -297,7 +297,7 @@ body {
 }
 
 ul#side-menu{
-	background-color: #eee;
+	background-color: white;
 }
 
 div.row{
@@ -326,12 +326,12 @@ a.delete{
 }
 
 a.edit{
-	color: #58a9fe;
+	color: blue;
 }
 
 .nav > li > a:hover, .sidebar ul li a.active{
 	color: white;
-	background-color: #333333;
+	background-color: grey;
 }
 
 

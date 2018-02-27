@@ -12,11 +12,12 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import be.cetic.rbac.man.json.Action;
-import be.cetic.rbac.man.json.Resource;
-import be.cetic.rbac.man.json.Role;
-import be.cetic.rbac.man.json.Rule;
-import be.cetic.rbac.man.json.User;
+import datasource.StorageManager;
+import json.Action;
+import json.Resource;
+import json.Role;
+import json.Rule;
+import json.User;
 
 public class SqliteManager implements StorageManager{
 	public static final Logger logger = Logger.getLogger(SqliteManager.class.getName());

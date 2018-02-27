@@ -26,13 +26,13 @@ import javax.ws.rs.core.Response.Status;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import be.cetic.rbac.man.datasource.SqliteManager;
-import be.cetic.rbac.man.datasource.StorageManager;
-import be.cetic.rbac.man.json.Action;
-import be.cetic.rbac.man.json.Resource;
-import be.cetic.rbac.man.json.Role;
-import be.cetic.rbac.man.json.Rule;
-import be.cetic.rbac.man.json.User;
-import be.cetic.rbac.man.xaml.generator.XACMLGenerator;
+import datasource.StorageManager;
+import json.Action;
+import json.Resource;
+import json.Role;
+import json.Rule;
+import json.User;
+import xacml.generator.XACMLGenerator;
 
 @Path("/")
 public class PAPService {
